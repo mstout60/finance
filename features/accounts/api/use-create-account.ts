@@ -5,7 +5,7 @@ import { client } from "@/lib/hono";
 import { toast } from "sonner";
 
 type ResponseType = InferResponseType<typeof client.api.accounts.$post>;
-type RequestTyhpe = InferRequestType<typeof client.api.accounts.$post>["json"];
+type RequestType = InferRequestType<typeof client.api.accounts.$post>["json"];
 
 export const useCreateAccount = () => {
     const queryClient = useQueryClient();
@@ -13,7 +13,7 @@ export const useCreateAccount = () => {
     const mutation = useMutation<
         ResponseType,
         Error,
-        RequestTyhpe
+        RequestType
     >({
         mutationFn: async (json) => {
             const response = await client.api.accounts.$post({ json });
