@@ -15,6 +15,13 @@
       "when": 1717609245455,
       "tag": "0001_outgoing_obadiah_stane",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1717731413619,
+      "tag": "0002_lively_titanium_man",
+      "breakpoints": true
     }
   ]
 }
