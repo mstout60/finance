@@ -35,10 +35,10 @@ const app = new Hono()
             const defaultFrom = subDays(defaultTo, 30);
 
             const startDate = from
-                ? parse(from, "yyy-MM-dd", new Date())
+                ? parse(from, "yyyy-MM-dd", new Date())
                 : defaultFrom;
             const endDate = to
-                ? parse(to, "yyy-MM-dd", new Date())
+                ? parse(to, "yyyy-MM-dd", new Date())
                 : defaultTo;
 
             const data = await db

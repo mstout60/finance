@@ -18,7 +18,7 @@ export const useGetTransactions = () => {
                 query: {
                     from,
                     to,
-                    accountId
+                    accountId,
                 },
             });
 

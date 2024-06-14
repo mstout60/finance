@@ -23,7 +23,6 @@ import { useGetAccounts } from "@/features/accounts/api/use-get-accounts";
 import { useCreateAccount } from "@/features/accounts/api/use-create-account";
 import { convertAmountFromMiliunits } from "@/lib/utils";
 
-
 const formSchema = insertTransactionsSchema.omit({
     id: true,
 });
