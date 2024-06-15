@@ -8,7 +8,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
+import { PlaidConnent } from "@/features/plaid/components/plaid-connect";
 
 export const SettingsCard = () => {
     const connectedBank = null;
@@ -36,12 +36,7 @@ export const SettingsCard = () => {
                                 : "No bank account connected"
                             }
                         </div>
-                        <Button
-                            size="sm"
-                            variant="ghost"
-                        >
-                            Connect
-                        </Button>
+                        <PlaidConnent />
                     </div>
                 </div>
             </CardContent>
