@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { useCreateLinkToken } from "@/features/plaid/api/use-create-link-token";
 import { useExchangePublicToken } from "@/features/plaid/api/use-exchange-public-token";
 
-export const PlaidConnent = () => {
+export const PlaidConnect = () => {
     const [token, setToken] = useState<string | null>(null);
 
     const createLinkToken = useCreateLinkToken();

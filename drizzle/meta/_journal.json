@@ -29,6 +29,20 @@
       "when": 1717779251943,
       "tag": "0003_empty_payback",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1718571526966,
+      "tag": "0004_rapid_pride",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1718572362735,
+      "tag": "0005_ordinary_adam_destine",
+      "breakpoints": true
     }
   ]
 }
