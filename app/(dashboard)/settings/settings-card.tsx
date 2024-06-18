@@ -16,6 +16,7 @@ import { SubscriptionCheckout } from "@/features/subscriptions/components/subscr
 
 import { Skeleton } from "@/components/ui/skeleton";
 import { Loader2 } from "lucide-react";
+import { useGetSubscription } from "@/features/subscriptions/api/use-get-subscription";
 
 
 export const SettingsCard = () => {
@@ -24,9 +25,12 @@ export const SettingsCard = () => {
         isLoading: isLoadingConnectedBank
     } = useGetConnectedBank();
 
-    const subscription = null
+    const {
+        data: subscription,
+        isLoading: isLoadingSubscription,
+    } = useGetSubscription();
 
-    if (isLoadingConnectedBank) {
+    if (isLoadingConnectedBank || isLoadingSubscription) {
         return (
             <Card className="border-none drop-shadow-sm">
                 <CardHeader>
@@ -89,10 +93,7 @@ export const SettingsCard = () => {
                             }
 
                         </div>
-                        {subscription
-                            ? <SubscriptionCheckout />
-                            : <SubscriptionCheckout />
-                        }
+                        <SubscriptionCheckout />
                     </div>
                 </div>
             </CardContent>
