@@ -43,6 +43,13 @@
       "when": 1718572362735,
       "tag": "0005_ordinary_adam_destine",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1718596470885,
+      "tag": "0006_keen_silver_centurion",
+      "breakpoints": true
     }
   ]
 }
